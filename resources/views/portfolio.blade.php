@@ -259,8 +259,6 @@
                                     </li>
                                 @endforeach
                             </ul>
-
-                            <p class="mt-4 font-mono text-[11px] uppercase tracking-[0.08em] text-muted">{{ implode(' / ', $project['tags']) }}</p>
                         </div>
                     </article>
                 @endforeach
