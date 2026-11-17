@@ -92,11 +92,11 @@
                 <figure class="w-[152px] shrink-0">
                     <img
                         src="{{ asset('images/portrait.jpg') }}"
-                        width="152"
-                        height="165"
+                        width="264"
+                        height="298"
                         alt="Portrait of {{ config('portfolio.personal.name') }}"
                         fetchpriority="high"
-                        class="block w-full border border-rule bg-surface"
+                        class="block h-auto w-full"
                     >
                 </figure>
             </div>
