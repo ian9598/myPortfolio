@@ -91,9 +91,9 @@
 
                 <figure class="w-[152px] shrink-0">
                     <img
-                        src="{{ asset('images/portrait.jpg') }}"
-                        width="264"
-                        height="298"
+                        src="{{ asset('images/portrait.png') }}"
+                        width="304"
+                        height="380"
                         alt="Portrait of {{ config('portfolio.personal.name') }}"
                         fetchpriority="high"
                         class="block h-auto w-full"
