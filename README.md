@@ -1,16 +1,18 @@
-# Portfolio — Muhammad Safiyan Roslan
+# Portfolio: Muhammad Safiyan Roslan
 
 A personal portfolio website for a Software Engineer specialising in Hospital Management Systems (HMS), HL7 integrations and API development.
 
-Built with **Laravel 12**, **Blade** and **Tailwind CSS v4**. No database required — all content lives in a single config file.
+Built with **Laravel 12**, **Blade** and **Tailwind CSS v4**. No database required: all content lives in a single config file.
 
 ## Features
 
 - **Single-page portfolio** with smooth-scroll sections: hero, about, skills, experience, projects, education, certifications, contact
-- **Content-driven** — every resume entry lives in `config/portfolio.php`, no database or admin panel
-- **Working contact form** — server-side validation, renders to email via Laravel Mail (log driver by default)
-- **Resume download** — serves a PDF from the public storage disk
-- **Responsive dark theme** — sticky blur nav, mobile menu, scroll-reveal animations, reduced-motion support
+- **Content-driven**: every resume entry lives in `config/portfolio.php`, no database or admin panel
+- **Working contact form**: server-side validation, renders to email via Laravel Mail (log driver by default)
+- **Resume download**: serves a PDF from the public storage disk
+- **Engineering ledger design**: paper ground, ink type, one oxide accent, no gradients or glow
+- **Responsive reflow** with a labelled mobile menu that closes on Escape
+- **Accessible by default**: WCAG AA contrast, visible focus rings, keyboard operable, reduced-motion respected
 
 ## Tech stack
 
@@ -66,7 +68,7 @@ Replacing the downloadable resume means overwriting
 ## Contact form
 
 By default `MAIL_MAILER=log`, so submissions are written to `storage/logs/laravel.log`
-instead of being sent — handy for local testing.
+instead of being sent, which is handy for local testing.
 
 To deliver real email, set these in `.env`:
 
@@ -81,7 +83,7 @@ MAIL_FROM_ADDRESS=your@gmail.com
 
 ## Deployment notes
 
-Laravel needs PHP hosting — GitHub alone cannot serve it. Point your host's
+Laravel needs PHP hosting; GitHub alone cannot serve it. Point your host's
 document root at `public/`, set `APP_ENV=production` and `APP_DEBUG=false`,
 then run `composer install --no-dev`, `npm run build`, `php artisan config:cache`
 and `php artisan storage:link` on the server.
